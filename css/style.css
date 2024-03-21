@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,800;1,500;1,700;1,800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,800;1,500;1,700;1,800&display=swap");
 
 :root {
   --primary: dodgerblue;
   --bg: white;
-  --shadow: 0 10px 10px rgba(0,0,0,0.1);
+  --shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -17,28 +16,9 @@
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   background-color: var(--bg);
-}
-
-::-webkit-scrollbar {
-  width: 20px;
-  height: 5px;
-  padding: 50px 0;
-  background-color: blue;
-}
-
-::-webkit-scrollbar-track {
-  
-  background-color: red;
-  height: 40rem !important;
-  width: 100px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: yellow;
-  width: 10px;
-  height: 5px;
+  -webkit-text-size-adjust: 100%;
 }
 
 .navbar {
@@ -83,7 +63,6 @@ body {
   margin: 10px;
 }
 
-
 .hero {
   margin-top: 8rem;
   display: flex;
@@ -95,10 +74,13 @@ body {
   display: flex;
   justify-content: end;
 }
-.hero .sub-title, .skils h1, .about h4, .contact h5{
+.hero .sub-title,
+.skils h1,
+.about h4,
+.contact h5 {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   position: relative;
   padding-left: 40px;
   width: fit-content;
@@ -107,13 +89,13 @@ body {
 }
 
 .hero .sub-title::before,
-.skils h1::before, 
+.skils h1::before,
 .about h4::before,
-.contact h5::before{
+.contact h5::before {
   content: "";
   width: 30px;
   height: 1px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   display: block;
   left: 0;
@@ -135,7 +117,7 @@ body {
 .service .sub-title {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   position: relative;
   padding-left: 40px;
   width: fit-content;
@@ -147,7 +129,7 @@ body {
   content: "";
   width: 30px;
   height: 1px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   display: block;
   left: 0;
@@ -157,7 +139,6 @@ body {
 .service {
   padding: 50px 0;
   background-color: whitesmoke;
-  
 }
 .service .sub-title {
   margin: 0 auto;
@@ -181,7 +162,7 @@ body {
   box-shadow: var(--shadow);
   border-radius: 20px;
   margin: 20px;
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 .service .row .content:hover {
@@ -228,14 +209,14 @@ body {
   padding: 10px;
 }
 .bar {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   display: block;
   height: 20px;
-  border: 1px solid rgba(0,0,0,0.3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: var(--shadow);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 0.1);
 }
 
 .bar span {
@@ -257,11 +238,8 @@ body {
   animation: javascript 4s;
 }
 
-
-
-
 @keyframes html {
-  0%{
+  0% {
     width: 0%;
   }
   100% {
@@ -269,7 +247,7 @@ body {
   }
 }
 @keyframes css {
-  0%{
+  0% {
     width: 0%;
   }
   100% {
@@ -277,7 +255,7 @@ body {
   }
 }
 @keyframes javascript {
-  0%{
+  0% {
     width: 0%;
   }
   100% {
@@ -285,14 +263,13 @@ body {
   }
 }
 
-
 .about {
   margin: 50px;
   line-height: 2rem;
   padding-bottom: 4rem;
 }
 .about h4 {
-  line-height:4rem;
+  line-height: 4rem;
   font-size: 30px;
 }
 .about p {
@@ -320,17 +297,17 @@ body {
   height: 400px;
 }
 input,
-textarea{
-  font-family: 'Poppins';
+textarea {
+  font-family: "Poppins";
   padding: 15px 10px;
   margin-bottom: 1rem;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
 }
 input:focus,
-textarea:focus{
+textarea:focus {
   outline: none;
   border: 1px solid var(--primary);
 }
@@ -341,7 +318,7 @@ button {
   color: white;
   border: none;
   border-radius: 5px;
-  transition: .2s;
+  transition: 0.2s;
 }
 button:hover {
   background-color: #0d447a;
@@ -376,26 +353,26 @@ footer h6 {
   .navbar .list.hidden {
     display: none;
   }
-  
+
   .hero {
     justify-content: center;
     flex-wrap: wrap;
   }
-   .hero .hero-right {
-     justify-content: center;
+  .hero .hero-right {
+    justify-content: center;
     order: -1;
   }
-  
+
   .hero .hero-left {
     text-align: center;
     padding-bottom: 2rem;
   }
 
- .hero .sub-title{
+  .hero .sub-title {
     margin: 0 auto;
   }
 
- .hero .title {
+  .hero .title {
     font-size: 2.3rem;
     margin-bottom: 0.5rem;
   }
